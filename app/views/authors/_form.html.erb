@@ -1,0 +1,21 @@
+<%= form_for(@author, :html => {class: "form-horizontal" }) do |f| %> 
+  <div class='form-group'> 
+    <div class='col-sm-9'>
+      <%= f.label :first_name %>
+      <%= f.text_field :first_name, class: 'form-control' %> 
+    </div>
+  </div>
+
+  <div class='form-group'> 
+    <div class='col-sm-9'>
+      <%= f.label :last_name %>
+      <%= f.text_field :last_name, class: 'form-control' %> 
+    </div>
+  </div>
+  <div class='form-group actions control-group'> 
+    <div class='col-sm-offset-3'> 
+      <%= f.submit class: 'btn btn-primary' %> 
+    </div>
+  </div>
+
+<% end %> 
