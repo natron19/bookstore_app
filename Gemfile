@@ -40,6 +40,7 @@ group :development, :test do
   gem 'guard-rspec' 
   gem 'rb-fsevent' if 'uname' =~ /Darwin/ 
   gem 'fabrication', '~> 2.13.2' 
+  gem 'thin', '~> 1.6.3'
 end
 
 group :test do 
