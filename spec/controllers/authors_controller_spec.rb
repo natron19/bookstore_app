@@ -1,6 +1,5 @@
 require 'rails_helper'
 
-
 describe AuthorsController do 
 
   describe "GET #index" do 
