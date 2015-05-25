@@ -1,6 +1,6 @@
 class BooksController < ApplicationController 
 
- #before_action :set_book, except: [:index, :new, :create]
+ before_action :set_book, except: [:index, :new, :create]
 
   def index
     @books = Book.all
@@ -10,7 +10,6 @@ class BooksController < ApplicationController
   end
 
   def new
-    require 'pry'; binding.pry
     @book = Book.new
     @book.publications.build
 
@@ -23,7 +22,7 @@ class BooksController < ApplicationController
 #    require 'pry'; binding.pry
     if @book.save
       flash[:success] = 'Book has been created.'
-      redirect_to [:admin, @book]
+      redirect_to @book
     else
       flash.now[:danger] = 'Book has not been created.'
       @publishers = Publisher.all

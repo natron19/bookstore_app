@@ -18,6 +18,7 @@ feature 'Creating Books' do
     fill_in 'Description', with: 'Learn Javascript the quick and easy way.' 
     fill_in 'Published at', with: '2012-01-01' 
 
+    attach_file 'Book cover', 'app/assets/images/itext.jpg' 
     select 'Peachpit Press', from: 'Publisher' 
 
     check author1.full_name 

@@ -30,6 +30,12 @@ gem 'bootstrap-sass', '~> 3.3.4.1'
 
 gem 'bootstrap_form', '~> 2.3.0'
 
+gem 'carrierwave-dropbox', '~> 1.2.1'
+
+gem 'mini_magick', '~> 4.2.4'
+
+gem 'figaro', '~> 1.1.1'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
